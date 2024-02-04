@@ -8,5 +8,11 @@ return
         },
         config = function()
             vim.keymap.set('n', '<C-n>', ':Neotree toggle<CR>', {})
+            local setting = require("neo-tree")
+            setting.setup({
+                window = {
+                    width=30,
+                }
+            })
         end
     }
