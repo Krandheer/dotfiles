@@ -8,6 +8,10 @@ return {
                 null_ls.builtins.formatting.black,
                 null_ls.builtins.diagnostics.pylint,
                 null_ls.builtins.formatting.prettier,
+                --rust
+                null_ls.builtins.diagnostics.ltrs,
+                null_ls.builtins.formatting.rustfmt,
+                null_ls.builtins.code_actions.ltrs,
                 -- null_ls.builtins.diagnostics.eslint,
                 null_ls.builtins.completion.spell,
             },
