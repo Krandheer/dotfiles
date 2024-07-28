@@ -6,7 +6,8 @@ return {
 		"MunifTanjim/nui.nvim",
 	},
 	config = function()
-		vim.keymap.set("n", "<C-n>", ":Neotree toggle<CR>", {})
+		-- vim.keymap.set("n", "<C-n>", ":Neotree toggle<CR>", {})
+		vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "toggle file explorer" })
 		local setting = require("neo-tree")
 		setting.setup({
 			window = {
