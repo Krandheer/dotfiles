@@ -4,6 +4,7 @@ return {
         dependencies = {
             "rcarriga/nvim-dap-ui",
             "nvim-neotest/nvim-nio",
+            "jbyuki/one-small-step-for-vimkind",
         },
         config = function()
             local dap = require("dap")
