@@ -8,7 +8,7 @@ return {
                 sticky = true,
                 ignore = nil,
                 toggler = {
-                    line = "gcc",
+                   line = "gcc",
                     block = "gbc",
                 },
                 opleader = {
