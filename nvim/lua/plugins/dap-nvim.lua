@@ -7,25 +7,79 @@ return {
 			"nvim-neotest/nvim-nio",
 			"jbyuki/one-small-step-for-vimkind",
 			"williamboman/mason.nvim",
+			"mxsdev/nvim-dap-vscode-js",
+			"nvim-telescope/telescope-dap.nvim",
 		},
 		config = function()
 			local dap = require("dap")
-			local ui = require("dapui")
-			require("dapui").setup()
+			local dapui = require("dapui")
+
+			dapui.setup()
+
+			dap.listeners.after.event_initialized["dapui_config"] = dapui.open
+			dap.listeners.before.event_terminated["dapui_config"] = dapui.close
+			dap.listeners.before.event_exited["dapui_config"] = dapui.close
+
+			dap.adapters.python = {
+				type = "executable",
+				command = vim.fn.stdpath("data") .. "/mason/packages/debugpy/venv/bin/python",
+				args = { "-m", "debugpy.adapter" },
+			}
+
+			dap.configurations.python = {
+				{
+					type = "python",
+					request = "launch",
+					name = "Launch file",
+					program = "${file}",
+					pythonPath = function()
+						local handle = io.popen("python3 -c 'import sys; print(sys.executable)'")
+						local result = handle:read("*a")
+						handle:close()
+						return result:gsub("\n", "")
+					end,
+				},
+			}
+
+			dap.adapters.node2 = {
+				type = "executable",
+				command = "node",
+				args = {
+					vim.fn.stdpath("data") .. "/mason/packages/js-debug-adapter/js-debug/src/dapDebugServer.js",
+					"8143",
+				},
+			}
+
+			dap.configurations.javascript = {
+				{
+					type = "node2",
+					request = "launch",
+					name = "Launch file",
+					program = "${file}",
+					cwd = vim.fn.getcwd(),
+					sourceMaps = true,
+					protocol = "inspector",
+					console = "integratedTerminal",
+				},
+			}
+
+			dap.configurations.typescript = dap.configurations.javascript
+
 			require("dap-go").setup()
-			ui.setup()
-			dap.listeners.before.attach.dapui_config = function()
-				ui.open()
-			end
-			dap.listeners.before.launch.dapui_config = function()
-				ui.open()
-			end
-			dap.listeners.before.event_terminated.dapui_config = function()
-				ui.close()
-			end
-			dap.listeners.before.event_exited.dapui_config = function()
-				ui.close()
-			end
+			dap.configurations.go = {
+				{
+					type = "go",
+					name = "Debug Go File",
+					request = "launch",
+					program = "${file}",
+				},
+				{
+					type = "go",
+					name = "Debug Package",
+					request = "launch",
+					program = "./${relativeFileDirname}",
+				},
+			}
 
 			-- local elixir_ls_debugger = vim.fn.exepath("elixir_ls_debugger")
 			-- if elixir_ls_debugger ~= " " then
@@ -41,16 +95,23 @@ return {
 			-- 	}
 			-- end
 
-			require("os") -- Require the os module
-			dap.adapters.python = function()
-				return { os.getenv("HOME") .. "/.virtualenvs/tools/bin/python" }
-			end
-
 			vim.keymap.set("n", "<Leader>b", dap.toggle_breakpoint, { desc = "set breakpoint or toggle breakpoint" })
-			vim.keymap.set("n", "<Leader>gb", dap.run_to_cursor, { desc = "run to curson" })
+			vim.keymap.set("n", "<Leader>db", dap.run_to_cursor, { desc = "run to cursor" })
+			vim.keymap.set("n", "<leader>ds", dap.step_over, { desc = "step over" })
+			vim.keymap.set("n", "<leader>di", dap.step_into, { desc = "step into" })
+			vim.keymap.set("n", "<leader>do", dap.step_into, { desc = "step out" })
+			vim.keymap.set("n", "<Leader>dr", dap.repl.open, { desc = "Open Debug Console (REPL)" })
+			vim.keymap.set("n", "<Leader>dl", dap.run_last, { desc = "Run Last Debug Session" })
+			vim.keymap.set("n", "<Leader>du", dapui.toggle, { desc = "Toggle Debug UI" })
 			vim.keymap.set("n", "<Leader>dc", dap.continue, { desc = "continue " })
-            vim.keymap.set("n", "<F1>", dap.continue)
-            vim.keymap.set("n", "<F2>", dap.step_into)
+
+			require("telescope").load_extension("dap")
+			vim.keymap.set("n", "<Leader>df", function()
+				require("telescope").extensions.dap.frames()
+			end, { desc = "Show Debug Frames" })
+			vim.keymap.set("n", "<Leader>dv", function()
+				require("telescope").extensions.dap.variables()
+			end, { desc = "Show Debug Variables" })
 		end,
 	},
 }
