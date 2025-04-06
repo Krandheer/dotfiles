@@ -1,0 +1,7 @@
+{
+  "templateHeading": "### Task of the day:",
+  "deleteOnComplete": false,
+  "removeEmptyTodos": true,
+  "rolloverChildren": true,
+  "rolloverOnFileCreate": true
+}

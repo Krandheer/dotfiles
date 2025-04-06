@@ -1,0 +1,295 @@
+{
+  "main": {
+    "id": "8f3a98e9461fc913",
+    "type": "split",
+    "children": [
+      {
+        "id": "f96a07f0eee4ee84",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aea79032c617b3d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyMobilesize for development in gt games.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "MyMobilesize for development in gt games"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "45aa2f47d2ea4582",
+    "type": "split",
+    "children": [
+      {
+        "id": "de8326efa89baba9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e09d912ea3ccab33",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "6928ff0b46e223e2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#segment-tree",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "da6d6053dc24d3c8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 203.5,
+    "collapsed": true
+  },
+  "right": {
+    "id": "29d24ec29f95dee7",
+    "type": "split",
+    "children": [
+      {
+        "id": "188e13abbb6474eb",
+        "type": "tabs",
+        "dimension": 44.07894736842106,
+        "children": [
+          {
+            "id": "f22d670f6d2ae65f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "daily-journal/17-11-2024.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 17-11-2024"
+            }
+          },
+          {
+            "id": "ce47ab2d8ca92188",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "daily-journal/17-12-2024.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 17-12-2024"
+            }
+          },
+          {
+            "id": "781a26178d38404f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "6e25353efefcada0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a9b24c4b1921d6f3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "daily-journal/17-11-2024.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 17-11-2024"
+            }
+          },
+          {
+            "id": "0e1c43767c163393",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "daily-journal/17-11-2024.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for 17-11-2024"
+            }
+          },
+          {
+            "id": "e7e9fc43310d8f54",
+            "type": "leaf",
+            "state": {
+              "type": "reminder-list",
+              "state": {},
+              "icon": "clock",
+              "title": "Reminders"
+            }
+          },
+          {
+            "id": "2bb2319f405c4659",
+            "type": "leaf",
+            "state": {
+              "type": "online.larslockefeer.obsidian-plugin-todo",
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "8d64980373e683de",
+        "type": "tabs",
+        "dimension": 55.92105263157894,
+        "children": [
+          {
+            "id": "7a98438e4a416cde",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 306.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "zk-prefixer:Create new unique note": false,
+      "publish:Publish changes...": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-book-search-plugin:Create new book note": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "omnisearch:Omnisearch": false,
+      "workspaces:Manage workspace layouts": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "aea79032c617b3d9",
+  "lastOpenFiles": [
+    "daily-journal/22-03-2025.md",
+    "MyMobilesize for development in gt games.md",
+    "daily-journal/21-03-2025.md",
+    "Excalidraw/Drawing 2025-03-22 18.15.18.excalidraw.md",
+    "debt.md",
+    "daily-journal/16-03-2025.md",
+    "daily-journal/11-03-2025.md",
+    "daily-journal/10-03-2025.md",
+    "daily-journal/13-01-2025.md",
+    "daily-journal/05-03-2025.md",
+    "daily-journal/01-03-2025.md",
+    "daily-journal/25-02-2025.md",
+    "Excalidraw/Drawing 2025-02-26 11.43.06.excalidraw.md",
+    "Excalidraw/Drawing 2024-08-04 21.46.59.excalidraw.md",
+    "Excalidraw/Screenshot 2024-07-24 at 4.52.35 PM.png",
+    "2025 vision board.canvas",
+    "daily-journal/17-02-2025.md",
+    "gt-games.md",
+    "2024 wishlist.md",
+    "75 hard.md",
+    "book shelf.md",
+    "discipline tracker.md",
+    "django-learning.md",
+    "docker.md",
+    "DSA Notes.md",
+    "freelance.md",
+    "git.md",
+    "interview question.md",
+    "Untitled.canvas",
+    "daily-journal/(Wiley Trading) Al Brooks - Reading Price Charts Bar by Bar_ The Technical Analysis of Price Action for the Serious Trader -Wiley (2009) 1.pdf",
+    "daily-journal/(Wiley Trading) Al Brooks - Reading Price Charts Bar by Bar_ The Technical Analysis of Price Action for the Serious Trader -Wiley (2009).pdf",
+    "tags",
+    "Resources",
+    "coding",
+    "Excalidraw",
+    "[daily-journal",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "zettlekasten/25 january",
+    "trading learning",
+    "books"
+  ]
+}
