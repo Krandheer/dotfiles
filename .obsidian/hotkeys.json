@@ -59,5 +59,14 @@
       ],
       "key": "O"
     }
+  ],
+  "tasknotes:create-new-task": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "T"
+    }
   ]
 }

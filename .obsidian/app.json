@@ -51,6 +51,41 @@
     "morni",
     "weasyprint",
     "thin",
-    "trie"
-  ]
+    "trie",
+    "Munger",
+    "Munger",
+    "Munger",
+    "NCERT",
+    "Yug",
+    "SmartdocAI",
+    "Basha",
+    "Satyam",
+    "eval",
+    "protoreflect",
+    "protoreflect",
+    "Kabra",
+    "Swiggy",
+    "reff",
+    "Snehlata",
+    "Bingi",
+    "Nagraj",
+    "Ramkumar",
+    "Jayprasad",
+    "gomaxprocs",
+    "Swapnil",
+    "rapido",
+    "cusition.",
+    "floor"
+  ],
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "readableLineLength": true,
+  "newFileFolderPath": "Inbox",
+  "promptDelete": false,
+  "openBehavior": "daily",
+  "defaultViewMode": "source"
 }

@@ -34,6 +34,17 @@
     "excalidraw-autoexport": "text",
     "excalidraw-embeddable-theme": "text",
     "excalidraw-open-md": "checkbox",
-    "wake up": "text"
+    "wake up": "text",
+    "excalidraw-embed-md": "checkbox",
+    "entry": "number",
+    "qty": "number",
+    "stop": "number",
+    "exit": "number",
+    "risk_r": "number",
+    "result_r": "number",
+    "setup": "multitext",
+    "trade_date": "text",
+    "outcome": "multitext",
+    "direction": "multitext"
   }
 }

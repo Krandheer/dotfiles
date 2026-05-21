@@ -1,4 +1,261 @@
 {
-  "workspaces": {},
-  "active": ""
+  "workspaces": {
+    "Calendar": {
+      "main": {
+        "id": "8f3a98e9461fc913",
+        "type": "split",
+        "children": [
+          {
+            "id": "42516c3321a23aa4",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "757091a4fdf900a6",
+                "type": "leaf",
+                "state": {
+                  "type": "bases",
+                  "state": {
+                    "file": "Inbox/daily-journal.base",
+                    "viewName": "Calendar"
+                  },
+                  "icon": "lucide-table",
+                  "title": "daily-journal"
+                }
+              }
+            ],
+            "stacked": true
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "45aa2f47d2ea4582",
+        "type": "split",
+        "children": [
+          {
+            "id": "de8326efa89baba9",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e09d912ea3ccab33",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "6928ff0b46e223e2",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "#consume",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "da6d6053dc24d3c8",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 265
+      },
+      "right": {
+        "id": "29d24ec29f95dee7",
+        "type": "split",
+        "children": [
+          {
+            "id": "188e13abbb6474eb",
+            "type": "tabs",
+            "dimension": 56.71378091872791,
+            "children": [
+              {
+                "id": "f22d670f6d2ae65f",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "daily-journal/17-11-2024.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for 17-11-2024"
+                }
+              },
+              {
+                "id": "ce47ab2d8ca92188",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Inbox/daily-journal.base",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from daily-journal"
+                }
+              },
+              {
+                "id": "781a26178d38404f",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "6e25353efefcada0",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "a9b24c4b1921d6f3",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Inbox/daily-journal.base",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of daily-journal"
+                }
+              },
+              {
+                "id": "0e1c43767c163393",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "Inbox/daily-journal.base"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for daily-journal"
+                }
+              },
+              {
+                "id": "6e1ea0798bdc4d49",
+                "type": "leaf",
+                "state": {
+                  "type": "reminder-list",
+                  "state": {},
+                  "icon": "clock",
+                  "title": "Reminders"
+                }
+              },
+              {
+                "id": "47f3a19b48c48c91",
+                "type": "leaf",
+                "state": {
+                  "type": "online.larslockefeer.obsidian-plugin-todo",
+                  "state": {},
+                  "icon": "checkmark",
+                  "title": "Todo"
+                }
+              }
+            ],
+            "currentTab": 6
+          },
+          {
+            "id": "8d64980373e683de",
+            "type": "tabs",
+            "dimension": 43.28621908127209,
+            "children": [
+              {
+                "id": "7a98438e4a416cde",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 348,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "bases:Create new base": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "zk-prefixer:Create new unique note": false,
+          "publish:Publish changes...": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-book-search-plugin:Create new book note": false,
+          "obsidian-excalidraw-plugin:New drawing": false,
+          "omnisearch:Omnisearch": false,
+          "tasknotes:Open mini calendar": false,
+          "tasknotes:Open advanced calendar": false,
+          "tasknotes:Open task list": false,
+          "tasknotes:Open notes": false,
+          "tasknotes:Open agenda": false,
+          "tasknotes:Open kanban board": false,
+          "tasknotes:Open pomodoro": false,
+          "tasknotes:Open pomodoro stats": false,
+          "tasknotes:Create new task": false,
+          "periodic-notes:Open today": false
+        }
+      },
+      "active": "757091a4fdf900a6",
+      "mtime": "2026-01-14T23:48:48+05:30"
+    }
+  },
+  "active": "Calendar"
 }

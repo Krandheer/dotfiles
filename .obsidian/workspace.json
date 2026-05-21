@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f96a07f0eee4ee84",
+        "id": "3818426d7c33d5aa",
         "type": "tabs",
         "children": [
           {
-            "id": "aea79032c617b3d9",
+            "id": "5cf2dd35dc7827e1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyMobilesize for development in gt games.md",
+                "file": "Inbox/linux course.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "MyMobilesize for development in gt games"
+              "title": "linux course"
             }
           }
-        ]
+        ],
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -63,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#segment-tree",
+                "query": "#consume",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,12 +85,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 203.5,
+    "width": 265,
     "collapsed": true
   },
   "right": {
@@ -99,7 +99,7 @@
       {
         "id": "188e13abbb6474eb",
         "type": "tabs",
-        "dimension": 44.07894736842106,
+        "dimension": 56.71378091872791,
         "children": [
           {
             "id": "f22d670f6d2ae65f",
@@ -126,12 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "daily-journal/17-12-2024.md",
+                "file": "Inbox/daily-journal.base",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 17-12-2024"
+              "title": "Outgoing links from daily-journal"
             }
           },
           {
@@ -155,7 +155,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "alphabetical",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -167,10 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "daily-journal/17-11-2024.md"
+                "file": "Inbox/daily-journal.base",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 17-11-2024"
+              "title": "Outline of daily-journal"
             }
           },
           {
@@ -179,24 +184,46 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "daily-journal/17-11-2024.md"
+                "file": "Inbox/daily-journal.base"
               },
               "icon": "lucide-info",
-              "title": "File properties for 17-11-2024"
+              "title": "File properties for daily-journal"
             }
           },
           {
-            "id": "e7e9fc43310d8f54",
+            "id": "6e1ea0798bdc4d49",
             "type": "leaf",
             "state": {
               "type": "reminder-list",
               "state": {},
-              "icon": "clock",
-              "title": "Reminders"
+              "icon": "lucide-ghost",
+              "title": "reminder-list"
             }
           },
           {
-            "id": "2bb2319f405c4659",
+            "id": "47f3a19b48c48c91",
+            "type": "leaf",
+            "state": {
+              "type": "online.larslockefeer.obsidian-plugin-todo",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "online.larslockefeer.obsidian-plugin-todo"
+            }
+          },
+          {
+            "id": "589df7d54f3b9ca4",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "Inbox/i-o multiplexer.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
+          },
+          {
+            "id": "22e4e32b2fdcd8e5",
             "type": "leaf",
             "state": {
               "type": "online.larslockefeer.obsidian-plugin-todo",
@@ -206,12 +233,12 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       },
       {
         "id": "8d64980373e683de",
         "type": "tabs",
-        "dimension": 55.92105263157894,
+        "dimension": 43.28621908127209,
         "children": [
           {
             "id": "7a98438e4a416cde",
@@ -219,19 +246,21 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 306.5,
+    "width": 348,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "markdown-importer:Open format converter": false,
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -240,56 +269,73 @@
       "command-palette:Open command palette": false,
       "zk-prefixer:Create new unique note": false,
       "publish:Publish changes...": false,
+      "workspaces:Manage workspace layouts": false,
       "templater-obsidian:Templater": false,
       "obsidian-book-search-plugin:Create new book note": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "periodic-notes:Open today": false,
       "omnisearch:Omnisearch": false,
-      "workspaces:Manage workspace layouts": false,
-      "periodic-notes:Open today": false
+      "tasknotes:Open mini calendar": false,
+      "tasknotes:Open advanced calendar": false,
+      "tasknotes:Open task list": false,
+      "tasknotes:Open agenda": false,
+      "tasknotes:Open kanban board": false,
+      "tasknotes:Open pomodoro": false,
+      "tasknotes:Open pomodoro stats": false,
+      "tasknotes:Create new task": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "aea79032c617b3d9",
+  "active": "5cf2dd35dc7827e1",
   "lastOpenFiles": [
-    "daily-journal/22-03-2025.md",
-    "MyMobilesize for development in gt games.md",
-    "daily-journal/21-03-2025.md",
-    "Excalidraw/Drawing 2025-03-22 18.15.18.excalidraw.md",
-    "debt.md",
-    "daily-journal/16-03-2025.md",
-    "daily-journal/11-03-2025.md",
-    "daily-journal/10-03-2025.md",
-    "daily-journal/13-01-2025.md",
-    "daily-journal/05-03-2025.md",
-    "daily-journal/01-03-2025.md",
-    "daily-journal/25-02-2025.md",
-    "Excalidraw/Drawing 2025-02-26 11.43.06.excalidraw.md",
-    "Excalidraw/Drawing 2024-08-04 21.46.59.excalidraw.md",
-    "Excalidraw/Screenshot 2024-07-24 at 4.52.35 PM.png",
-    "2025 vision board.canvas",
-    "daily-journal/17-02-2025.md",
-    "gt-games.md",
-    "2024 wishlist.md",
-    "75 hard.md",
-    "book shelf.md",
-    "discipline tracker.md",
-    "django-learning.md",
-    "docker.md",
-    "DSA Notes.md",
-    "freelance.md",
-    "git.md",
-    "interview question.md",
+    "system design.md",
+    "Excalidraw/2026-vision-board.excalidraw.md",
+    "Excalidraw/Adhaar_kyc.excalidraw.md",
+    "Inbox/i-o multiplexer.md",
+    "daily-journal/14-05-2026.md",
+    "superk/asynchronous-programming in javascript-typescript.md",
+    "daily-journal/07-05-2026.md",
+    "Inbox/leetcode.md",
+    "setup-linting-formatting-precommit.md",
+    "Inbox/linux course.md",
+    "Quant trading job.md",
+    "coding/go learning.md",
+    "daily-journal/02-05-2026.md",
+    "daily-journal/26-04-2026.md",
+    "superk/Superk.md",
+    "Inbox/zerodha.md",
+    "Inbox/resume.md",
+    "Inbox/teaching.md",
+    "Inbox/Untitled 2.md",
+    "Trading_Journal/trading dumps.md",
+    "DSA Interview.md",
+    "daily-journal/31-03-2026.md",
+    "Inbox/companies to apply.md",
+    "Inbox/watch solution videos for these question.md",
+    "erp-purchase-flow.md",
+    "System design using Golang.md",
+    "Trading_Journal/screenshots/2026-01-06-BSE-entry.png",
+    "Trading_Journal/screenshots/2026-01-13-JAINREC-entry.png",
+    "Trading_Journal/screenshots/2026-01-21-HINDCOPPER-entry.png",
+    "Trading_Journal/screenshots/2026-01-19-HCLTECH-entry.png",
+    "Trading_Journal/2026-01-19-HCLTECH-entry.png",
+    "2026-01-19-HCLTECH-entry.png",
+    "superk",
+    "Trading_Journal/screenshots/2026-01-16-ECPACKPEB-entry.png",
+    "Trading_Journal/screenshots/2026-01-18-ECPACKPEB-entry.png",
+    "Trading_Journal/2026-01-18-ECPACKPEB-entry.png",
+    "2026-01-18-ECPACKPEB-entry.png",
+    "My-written-books/output/book.pdf",
+    "Trading_Journal/playbook",
+    "Trading_Journal/dashboards",
+    "Trading_Journal/trades",
+    "Trading_Journal/screenshots",
+    "Trading-Journal/Trades",
+    "Trading_Journal",
+    "My-written-books-backup/output/book.epub",
+    "My-written-books-backup/output/book.pdf",
+    "2026 vision board.canvas",
     "Untitled.canvas",
-    "daily-journal/(Wiley Trading) Al Brooks - Reading Price Charts Bar by Bar_ The Technical Analysis of Price Action for the Serious Trader -Wiley (2009) 1.pdf",
-    "daily-journal/(Wiley Trading) Al Brooks - Reading Price Charts Bar by Bar_ The Technical Analysis of Price Action for the Serious Trader -Wiley (2009).pdf",
-    "tags",
-    "Resources",
-    "coding",
-    "Excalidraw",
-    "[daily-journal",
     "Untitled 2.canvas",
-    "Untitled 1.canvas",
-    "zettlekasten/25 january",
-    "trading learning",
-    "books"
+    "Untitled 1.canvas"
   ]
 }

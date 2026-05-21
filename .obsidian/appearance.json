@@ -6,5 +6,8 @@
   "textFontFamily": "Menlo",
   "baseFontSize": 15,
   "interfaceFontFamily": "",
-  "showRibbon": true
+  "showRibbon": true,
+  "enabledCssSnippets": [
+    "page_break"
+  ]
 }

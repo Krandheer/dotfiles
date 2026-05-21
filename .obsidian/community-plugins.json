@@ -6,10 +6,13 @@
   "obsidian-reminder-plugin",
   "obsidian-book-search-plugin",
   "periodic-notes",
-  "obsidian-excalidraw-plugin",
   "omnisearch",
   "obsidian-rollover-daily-todos",
   "obsidian-plugin-todo",
   "obsidian-style-settings",
-  "advanced-canvas"
+  "advanced-canvas",
+  "tasknotes",
+  "obsidian-reading-time",
+  "obsidian-excalidraw-plugin",
+  "obsidian-smart-typography"
 ]
