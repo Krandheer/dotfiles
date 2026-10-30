@@ -11,9 +11,9 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"lua_ls",
-					"gopls",
+                    "gopls",
 					"eslint",
-					"tsserver",
+					"ts_ls",
 					"pyright",
 					"clangd",
 					"rust_analyzer",
@@ -30,7 +30,7 @@ return {
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
 			lspconfig.pyright.setup({ capabilities = capabilities })
-			lspconfig.tsserver.setup({
+			lspconfig.ts_ls.setup({
 				capabilities = capabilities,
 				init_options = { preferences = { disableSuggestions = true } },
 			})
