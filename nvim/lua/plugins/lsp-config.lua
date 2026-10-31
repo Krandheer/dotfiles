@@ -1,17 +1,19 @@
 return {
 	{
 		"williamboman/mason.nvim",
+		version = "*",
 		config = function()
 			require("mason").setup()
 		end,
 	},
+
 	{
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"lua_ls",
-                    "gopls",
+					"gopls",
 					"eslint",
 					"ts_ls",
 					"pyright",
@@ -21,33 +23,55 @@ return {
 			})
 		end,
 	},
+
 	{
 		"neovim/nvim-lspconfig",
+		version = "*",
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-			local util = require("lspconfig/util")
 
-			local lspconfig = require("lspconfig")
-			lspconfig.lua_ls.setup({ capabilities = capabilities })
-			lspconfig.pyright.setup({ capabilities = capabilities })
-			lspconfig.ts_ls.setup({
+			-- Lua
+			vim.lsp.config("lua_ls", {
 				capabilities = capabilities,
-				init_options = { preferences = { disableSuggestions = true } },
 			})
-			lspconfig.rust_analyzer.setup({
+
+			-- Python
+			vim.lsp.config("pyright", {
 				capabilities = capabilities,
-				root_dir = util.root_pattern("cargo.toml"),
+			})
+
+			-- TypeScript / JavaScript
+			vim.lsp.config("ts_ls", {
+				capabilities = capabilities,
+				init_options = {
+					preferences = {
+						disableSuggestions = true,
+					},
+				},
+			})
+
+			-- Rust
+			vim.lsp.config("rust_analyzer", {
+				capabilities = capabilities,
+				root_markers = {
+					"Cargo.toml",
+					".git",
+				},
 				settings = {
 					["rust-analyzer"] = {},
 				},
 			})
 
-			-- Add gopls configuration
-			lspconfig.gopls.setup({
+			-- Go
+			vim.lsp.config("gopls", {
 				capabilities = capabilities,
 				cmd = { "gopls", "serve" },
 				filetypes = { "go", "gomod", "gowork", "gotmpl" },
-				root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+				root_markers = {
+					"go.work",
+					"go.mod",
+					".git",
+				},
 				settings = {
 					gopls = {
 						analyses = {
@@ -58,11 +82,33 @@ return {
 				},
 			})
 
-			lspconfig.clangd.setup({ capabilities = capabilities })
+			-- C / C++
+			vim.lsp.config("clangd", {
+				capabilities = capabilities,
+			})
 
-			vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "show docs" })
-			vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "go to definition" })
-			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "code action" })
+			-- Enable all the servers
+			vim.lsp.enable({
+				"lua_ls",
+				"pyright",
+				"ts_ls",
+				"rust_analyzer",
+				"gopls",
+				"clangd",
+			})
+
+			-- Keymaps
+			vim.keymap.set("n", "K", vim.lsp.buf.hover, {
+				desc = "show docs",
+			})
+
+			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {
+				desc = "go to definition",
+			})
+
+			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {
+				desc = "code action",
+			})
 		end,
 	},
 }
